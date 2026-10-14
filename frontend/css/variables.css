@@ -1,0 +1,27 @@
+:root {
+    /* Paleta extraída de Valen Cosmetics */
+    --bg-header: #ffffff;
+    --bg-body: #fcfbfa;
+    --bg-card: #ffffff;
+    --color-primary: #c97086;
+    /* Rosa blush / Valen */
+    --color-primary-dark: #a64b62;
+    --color-gold: #c5a059;
+    /* Dorado cosmético */
+    --color-gold-light: #dfc07a;
+    --color-text: #2c2727;
+    --color-text-muted: #736b69;
+    --color-border: #ede7e3;
+    --color-footer-bg: #1f1a1c;
+    /* Fondo oscuro elegante para contrastar */
+    --color-footer-text: #e6dfdf;
+
+    /* Tipografías */
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Montserrat', sans-serif;
+
+    /* Sombras y transiciones */
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 12px 28px rgba(197, 160, 89, 0.18);
+    --transition: all 0.35s ease;
+}

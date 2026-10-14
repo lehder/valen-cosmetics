@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valen Cosmetics | Alta Cosmética & Belleza</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(180deg, #ffffff 0%, #fdf8f9 100%);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            color: var(--color-primary-dark);
+            margin-bottom: 1.2rem;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: var(--color-text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .btn-cta {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            color: #fff;
+            padding: 0.85rem 2.2rem;
+            border-radius: 30px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(201, 112, 134, 0.35);
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .btn-cta:hover {
+            box-shadow: 0 6px 20px rgba(201, 112, 134, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .brand-features {
+            max-width: 1200px;
+            margin: 4rem auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .feature-card {
+            padding: 2.5rem 1.5rem;
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--color-gold-light);
+        }
+
+        .feature-card h3 {
+            font-family: var(--font-serif);
+            color: var(--color-gold);
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado con soporte responsive -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="brand-wrapper">
+                <a href="index.html">
+                    <img src="assets/images/Logo.jpeg" alt="Valen Cosmetics" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="catalog.html">Catálogo</a></li>
+                    <li><a href="#marca">La Marca</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="btn-auth">Mi Cuenta</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>La Esencia de Tu Belleza Natural</h1>
+            <p>Fórmulas exclusivas diseñadas para realzar tu luz propia con ingredientes selectos y acabado profesional.
+            </p>
+            <a href="catalog.html" class="btn-cta">Descubrir Colección</a>
+        </div>
+    </section>
+
+    <!-- Filosofía de Marca -->
+    <section id="marca" class="brand-features">
+        <div class="feature-card">
+            <h3>Cruelty Free & Vegano</h3>
+            <p>Comprometidos con el respeto animal y la sostenibilidad en cada fórmula cosmética.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Ingredientes Premium</h3>
+            <p>Texturas sedosas enriquecidas con pigmentos de larga duración y cuidado dermatológico.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Alta Definición</h3>
+            <p>Resultados que combinan ligereza, luminosidad y elegancia en cualquier ocasión.</p>
+        </div>
+    </section>
+
+    <!-- Footer Descriptivo -->
+    <footer id="contacto" class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Valen Cosmetics</h4>
+                <p>Inspirando confianza, autenticidad y elegancia a través del maquillaje y el cuidado personal de
+                    vanguardia.</p>
+                <p><small>© 2026 Valen Cosmetics. Todos los derechos reservados.</small></p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalog.html">Catálogo Completo</a></li>
+                    <li><a href="login.html">Acceso / Registro</a></li>
+                    <li><a href="admin.html">Portal Administrativo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Atención al Cliente</h4>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Devoluciones</a></li>
+                    <li><a href="#">Guía de Tonos</a></li>
+                    <li><a href="#">Soporte: info@valencosmetics.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Club de Belleza</h4>
+                <p>Regístrate para recibir lanzamientos privados y promociones exclusivas en tu correo.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('¡Gracias por unirte!');">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Unirme</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Diseñado para Valen Cosmetics · Belleza sin límites
+        </div>
+    </footer>
+
+    <script src="js/header-footer.js"></script>
+</body>
+
+</html>

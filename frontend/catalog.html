@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Exclusivo | Valen Cosmetics</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+
+<body>
+
+    <!-- Encabezado con soporte responsive -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="brand-wrapper">
+                <a href="index.html">
+                    <img src="assets/images/Logo.jpeg" alt="Valen Cosmetics" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalog.html" class="active">Catálogo</a></li>
+                    <li><a href="index.html#marca">La Marca</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="btn-auth">Mi Cuenta</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor del Catálogo -->
+    <main class="catalog-section">
+        <h1 class="catalog-title">Colección de Temporada</h1>
+        <p class="catalog-subtitle">Explora cada producto; pasa el ratón sobre cada card para ver sus diferentes ángulos
+            y aplicaciones.</p>
+
+        <!-- Grid de productos interactivo -->
+        <div class="product-grid" id="productGrid">
+            <!-- Se renderiza desde js/catalog.js -->
+        </div>
+
+        <!-- Paginación -->
+        <div class="pagination" id="paginationContainer">
+            <!-- Se inyecta dinámicamente -->
+        </div>
+    </main>
+
+    <!-- Footer Descriptivo -->
+    <footer id="contacto" class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Valen Cosmetics</h4>
+                <p>Inspirando confianza, autenticidad y elegancia a través del maquillaje y el cuidado personal de
+                    vanguardia.</p>
+                <p><small>© 2026 Valen Cosmetics. Todos los derechos reservados.</small></p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalog.html">Catálogo</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                    <li><a href="admin.html">Portal Administrativo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Envíos y Seguimiento</a></li>
+                    <li><a href="#">Soporte: info@valencosmetics.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ofertas Exclusivas</h4>
+                <p>Recibe ofertas anticipadas directamente en tu bandeja de entrada.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Suscrito.');">
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Valen Cosmetics © 2026
+        </div>
+    </footer>
+
+    <script src="js/header-footer.js"></script>
+    <script src="js/catalog.js"></script>
+</body>
+
+</html>
