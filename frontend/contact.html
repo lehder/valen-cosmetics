@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Contacto | Valen Cosmetics</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="brand-wrapper">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Valen Cosmetics" class="logo-img">
+                </a>
+            </div>
+
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalog.html">Catálogo</a></li>
+                    <li><a href="index.html#marca">La Marca</a></li>
+                    <li><a href="contact.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="login.html" class="btn-auth">Mi Cuenta</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido de Contacto -->
+    <main class="contact-section">
+        <div class="contact-header">
+            <h1>Estamos para Ayudarte</h1>
+            <p>¿Tienes dudas sobre tonos, envíos o colaboraciones? Escríbenos y nuestro equipo de asesoras de belleza te
+                responderá a la brevedad.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Columna de Información -->
+            <aside class="contact-info-panel">
+                <h3>Atención Exclusiva</h3>
+                <p class="panel-desc">Nuestro equipo especializado está disponible para brindarte la mejor experiencia
+                    en cada consulta.</p>
+
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <h4>Ubicación</h4>
+                        <p>Atelier & Showroom central<br>Madrid, España</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div>
+                        <h4>Correo Electrónico</h4>
+                        <p><a href="mailto:info@valencosmetics.com">info@valencosmetics.com</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div>
+                        <h4>Línea de Atención</h4>
+                        <p>+34 900 123 456<br><small>Lun - Vie: 09:00 - 18:00</small></p>
+                    </div>
+                </div>
+
+                <div class="social-box">
+                    <h4>Síguenos en Redes</h4>
+                    <div class="social-tags">
+                        <span>Instagram</span>
+                        <span>TikTok</span>
+                        <span>Pinterest</span>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Columna del Formulario -->
+            <div class="contact-form-card">
+                <h3>Envíanos un Mensaje</h3>
+
+                <div id="contactAlert" class="contact-alert"></div>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo *</label>
+                            <input type="text" id="name" name="name" placeholder="Ej. Valentina Morales" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Motivo de Consulta *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="asesoria">Asesoría sobre tonos y productos</option>
+                            <option value="pedidos">Estado de mi pedido / Envíos</option>
+                            <option value="devoluciones">Cambios y devoluciones</option>
+                            <option value="mayorista">Venta mayorista o alianzas</option>
+                            <option value="otro">Otro asunto</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje *</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="subscribeNewsletter" name="subscribeNewsletter" checked>
+                        <label for="subscribeNewsletter">Deseo unirme al Club Valen Cosmetics para recibir novedades y
+                            ofertas exclusivas.</label>
+                    </div>
+
+                    <button type="submit" class="btn-submit" id="submitBtn">
+                        <span>Enviar Consulta</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto" class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Valen Cosmetics</h4>
+                <p>Inspirando confianza, autenticidad y elegancia a través del maquillaje y el cuidado personal de
+                    vanguardia.</p>
+                <p><small>© 2026 Valen Cosmetics. Todos los derechos reservados.</small></p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalog.html">Catálogo Completo</a></li>
+                    <li><a href="login.html">Acceso / Registro</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="admin.html">Portal Administrativo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Atención al Cliente</h4>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Devoluciones</a></li>
+                    <li><a href="#">Guía de Tonos</a></li>
+                    <li><a href="#">Soporte: info@valencosmetics.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Club de Belleza</h4>
+                <p>Regístrate para recibir lanzamientos privados y promociones exclusivas en tu correo.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('¡Gracias por unirte!');">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Unirme</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Diseñado para Valen Cosmetics · Belleza sin límites
+        </div>
+    </footer>
+
+    <script src="js/header-footer.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
